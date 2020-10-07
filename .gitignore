@@ -1,0 +1,6 @@
+*.out
+*.o
+boofuzz-crash-bin*
+*.log
+core
+coredumps
