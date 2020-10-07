@@ -4,4 +4,4 @@
  - [/python/fuzz_results/](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/python/fuzz_results): contains test data and .db files
  - [/report.md](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/report.md): contains official writeup
 
-All other folders were used for testing.
+All other folders were used for testing. Note: hyperlinks in this repo are broken because they all link to a github.iu.edu account.
