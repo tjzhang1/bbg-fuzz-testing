@@ -1,7 +1,7 @@
 # Welcome
- - [/httpserver/](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/httpserver): contains Beaglebone code
- - [/python/boofuzz/](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/python/boofuzz): contains fuzzing script
- - [/python/fuzz_results/](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/python/fuzz_results): contains test data and .db files
- - [/report.md](https://github.iu.edu/tjzhang/beaglebone_green/tree/master/report.md): contains official writeup
+ - [httpserver/](https://github.com/tjzhang1/bbg-fuzz-testing/tree/master/httpserver): contains Beaglebone code
+ - [python/boofuzz/](https://github.com/tjzhang1/bbg-fuzz-testing/tree/master/python/boofuzz): contains fuzzing script
+ - [python/fuzz_results/](https://github.com/tjzhang1/bbg-fuzz-testing/tree/master/python/fuzz_results): contains test data and .db files
+ - [report.md](https://github.com/tjzhang1/bbg-fuzz-testing/tree/master/report.md): contains official writeup
 
-All other folders were used for testing. Note: hyperlinks in this repo are broken because they all link to a github.iu.edu account.
+All other folders were used for testing. Note: hyperlinks in the report are broken because they all link to my github.iu.edu account.
