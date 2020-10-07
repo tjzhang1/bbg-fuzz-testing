@@ -73,27 +73,27 @@ The two callback functions both occur immediately after a fuzz test case is sent
 ## Results
 ### Test 1:
 The missing `\0` bug and the stack-based buffer overflow bugs are caught. The following table shows how many test cases caused each type of bug:  
-![graph1.1](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%202/graph1.png?raw=True)  
+![graph1.1](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%202/graph1.png?raw=True)  
 The following table shows which bugs are caught by request formats 1, 2, and 3 (see the [boofuzz fuzzing script](#boofuzz-fuzzing-script) section for a reminder of what these are).  
-![graph1.2](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%202/graph2.png?raw=True)
+![graph1.2](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%202/graph2.png?raw=True)
 
 ### Test 2:
 The missing `\0` bug and the heap-based buffer overflow bugs are caught. The following table shows how many test cases caused each type of bug:  
-![graph2.1](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%203/graph1.png?raw=True)  
+![graph2.1](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%203/graph1.png?raw=True)  
 The following table shows which bugs are caught by request formats 1, 2, and 3 (see the [boofuzz fuzzing script](#boofuzz-fuzzing-script) section for a reminder of what these are).  
-![graph2.2](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%203/graph2.png?raw=True)
+![graph2.2](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%203/graph2.png?raw=True)
 
 ### Test 3:
 The missing `\0` bug, `printf` vulnerability, and double free bugs are caught. Further inspection on the failed test cases shows that every request for the `/\/\/` command results in a crash due to a double free. The following table shows how many test cases caused each type of bug:  
-![graph3.1](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%204/graph1.png?raw=True)  
+![graph3.1](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%204/graph1.png?raw=True)  
 The following table shows which bugs are caught by request formats 1, 2, and 4 (see the [boofuzz fuzzing script](#boofuzz-fuzzing-script) section for a reminder of what these are).  
-![graph3.2](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%204/graph2.png?raw=True)
+![graph3.2](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%204/graph2.png?raw=True)
 
 ### Test 4:
 The missing `\0` bug, `printf` vulnerability, and null pointer dereference bugs are caught. Further inspection on the failed test cases shows that every request for the `/NULL` command results in a crash due to a null pointer dereference. The following table shows how many test cases caused each type of bug:  
-![graph4.1](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%205/graph1.png?raw=True)  
+![graph4.1](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%205/graph1.png?raw=True)  
 The following table shows which bugs are caught by request formats 1, 2, and 5 (see the [boofuzz fuzzing script](#boofuzz-fuzzing-script) section for a reminder of what these are).  
-![graph4.2](https://github.iu.edu/tjzhang/beaglebone_green/blob/master/python/fuzz_results/Run%205/graph2.png?raw=True)
+![graph4.2](https://github.com/tjzhang1/bbg-fuzz-testing/blob/master/python/fuzz_results/Run%205/graph2.png?raw=True)
 ## Discussion
 All of the bugs planted in the server binary are caught by the tests. The double free and null pointer dereference bugs are caught every time their respective commands are sent to the server. Inspection of these test cases indicate that every time these bugs exist in the flow of execution, a crash occurs. Thus many of test cases from request formats 4 and 5 result in a crash.
 
